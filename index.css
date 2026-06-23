@@ -1,0 +1,237 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap"); /* Fonte do titulo */
+
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Rubik+Glitch&display=swap"); /* Fonte de seções */
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #0a0a0a;
+}
+
+header {
+  width: 70%;
+  margin: 15px auto;
+  padding: 20px 10px;
+  background-color: #0f0f0f;
+  border-radius: 15px;
+  border-bottom: 2px solid #991b1b;
+  /* box-shadow: 0 0 15px rgba(153, 27, 27, 0.5); */
+  /* box-shadow: 0 5px 20px rgba(0, 0, 0, 0.8); */
+  box-shadow:
+    0 0 8px rgba(153, 27, 27, 0.3),
+    0 0 15px rgba(153, 27, 27, 0.2);
+}
+
+.navbar {
+  width: 100%;
+}
+
+.navbar > ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 3.5em;
+}
+
+.navbar > ul > li > a {
+  display: inline-block;
+  color: #ffffff;
+  cursor: pointer;
+  text-decoration: none;
+  transition: transform 0.3s ease-in-out;
+}
+
+.navbar > ul > li > a:hover {
+  color: #991b1b;
+  transform: translateY(-5px);
+}
+
+section#hero {
+  color: #991b1b;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 75vh;
+  text-align: center;
+  gap: 20px;
+}
+
+section#hero h1 {
+  font-family: "Rubik Glitch", cursive;
+  font-weight: 200;
+  font-size: 8em;
+  margin: 0;
+  padding: 15px;
+}
+
+section#hero img {
+  width: 450px;
+  height: auto;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+section#hero button /* seta 1 */ {
+  font-size: 8em;
+  padding: 12px;
+  color: #ffffff;
+  background: none;
+  border: none;
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+    scale: 0.5;
+  }
+  to {
+    opacity: 1;
+    scale: 1;
+  }
+}
+
+.seta {
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 20%;
+}
+
+.features > button /* seta 2 */ {
+  font-size: 8em;
+  padding: 12px;
+  color: #ffffff;
+  background: none;
+  border: none;
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+    scale: 0.5;
+  }
+  to {
+    opacity: 1;
+    scale: 1;
+  }
+}
+
+.seta2 {
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 20%;
+}
+
+.subtitle {
+  font-family: "Orbitron", sans-serif;
+  font-size: 2.5em;
+  color: #ffffff;
+  padding: 12px;
+  margin: 0;
+}
+
+.subtitle2 {
+  font-family: "Orbitron", sans-serif;
+  font-size: 2.5em;
+  color: #ffffff;
+  padding: 12px;
+  margin: 0;
+}
+
+section#game-features {
+  margin-top: 100px;
+}
+
+.features {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 12px;
+  gap: 30px;
+}
+
+.feature-card {
+  max-width: 900px;
+  color: #ffffff;
+  background-color: #111;
+  font-family: "Orbitron", sans-serif;
+  padding: 12px;
+  border: 2px solid #991b1b;
+  border-radius: 6px;
+  box-shadow:
+    0 0 8px rgba(153, 27, 27, 0.3),
+    0 0 15px rgba(153, 27, 27, 0.2);
+  text-align: center;
+  line-height: 1.5;
+  font-size: 1.35em;
+}
+
+section#cta > .ctaContent > h2 {
+  font-family: "Orbitron", sans-serif;
+  font-size: 3em;
+  color: #ffffff;
+  margin: 0;
+}
+
+section#cta {
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  text-align: center;
+  gap: 20px;
+}
+
+.finalText {
+  font-family: "Orbitron", sans-serif;
+  max-width: 800px;
+  font-size: 2.5em;
+  color: #ffffff;
+  padding: 12px;
+  margin: 0;
+}
+
+section#cta > h1 {
+  font-family: "Rubik Glitch", cursive;
+  font-weight: 200;
+  font-size: 8em;
+  margin: 0;
+}
+
+section#cta > button {
+  padding: 20px 45px;
+  font-size: 2rem;
+  font-family: "Orbitron", sans-serif;
+
+  color: #ffffff;
+  background: #991b1b;
+
+  border: 2px solid #c62828;
+  border-radius: 6px;
+
+  cursor: pointer;
+
+  box-shadow:
+    0 0 10px rgba(153, 27, 27, 0.5),
+    0 0 20px rgba(153, 27, 27, 0.3);
+
+  transition: all 0.3s ease;
+}
+
+section#cta button:hover {
+  background: #c62828;
+
+  transform: scale(1.05);
+
+  box-shadow:
+    0 0 15px rgba(198, 40, 40, 0.8),
+    0 0 35px rgba(198, 40, 40, 0.5);
+}
